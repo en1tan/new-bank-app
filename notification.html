@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from www.s7template.com/tf/bankapp/notification.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Oct 2020 08:24:58 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,36 +40,60 @@
     </div>
     <!-- //. search Popup -->
 
-    <!-- header start -->
-    <div class="header-area" style="background-image: url(assets/img/bg/1.png);">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4 col-3">
-                    <a class="menu-back-page" href="home.html">
-                        <i class="fa fa-angle-left"></i>
+    <div class="container pd-top-40">
+        <a href="../" class="btn btn-blue" role="button">
+            <i class="fa fa-arrow-left"></i>
+            Back
+        </a>
+    </div>
+
+    <!-- sidebar start -->
+    <div class="ba-navbar">
+        <div class="ba-navbar-user mb-0">
+            <div class="menu-close">
+                <i class="la la-times"></i>
+            </div>
+            <div class="thumb">
+                <img src="assets/img/user.png" alt="user">
+            </div>
+            <div class="details">
+                <h5>Raduronto kelax</h5>
+                <p>ID: 99883323</p>
+            </div>
+        </div>
+        <div class="transaction-details mt-0">
+            <ul class="transaction-details-inner">
+                <li>
+                    <a href="dashboad.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-building"></i>&nbsp;Home
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
                     </a>
-                </div>
-                <div class="col-sm-4 col-6 text-center">
-                    <div class="page-name">Notification</div>
-                </div>
-                <div class="col-sm-4 col-3 text-right">
-                    <div class="search header-search">
-                        <i class="fa fa-search"></i>
-                    </div>
-                </div>
+                </li>
+                <li>
+                    <a href="cards.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-credit-card"></i>&nbsp;My Cards
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-dollar"></i>&nbsp;Transactions
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-setting.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-cog"></i>&nbsp;Settings
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center mt-3">
+                <a class="btn btn-warning" href="signin.html">Logout</a>
             </div>
         </div>
     </div>
-    <!-- header end -->
-
-    <!-- page-title stary -->
-    <div class="page-title mg-top-50">
-        <div class="container">
-            <a class="float-left" href="home.html">Home</a>
-            <span class="float-right">Notification</span>
-        </div>
-    </div>
-    <!-- page-title end -->
+    <!-- sidebar end -->
 
     <!-- transaction start -->
     <div class="transaction-area pd-top-36">
@@ -76,10 +101,6 @@
             <div class="section-title">
                 <h3 class="title">Inbox Notifications</h3>
                 <a href="#"><i class="fa fa-bell"></i></a>
-            </div>
-            <div class="btn-wrap-area mb-2 text-center">
-                <a class="btn btn-red mr-2 mb-1" href="#">Message 12</a>
-                <a class="btn btn-purple ml-2 mb-1" href="#">Notification 34</a>
             </div>
             <div class="ba-bill-pay-inner">
                 <div class="ba-single-bill-pay">
@@ -131,49 +152,39 @@
     <!-- transaction End -->
 
     <!-- Footer Area -->
-    <div class="footer-area mg-top-40">
-        <div class="footer-top text-center" style="background-image: url(assets/img/bg/7.png);">
+    <footer class="footer-area pd-top-40">
+        <div class="text-center py-2" style="background-image: url(assets/img/bg/7.png);">
             <div class="container">
-                <p>Copyright © Bankapp 2020. All Rights Reserved. Designed By S7template</p>
+                <div class="footer-bottom text-center">
+                    <ul>
+                        <li>
+                            <a href="dashboad.html">
+                                <i class="fa fa-1_5x fa-home"></i>
+                                <p class="text-uppercase">Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transactions.html">
+                                <i class="fa fa-1_5x fa-files-o"></i>
+                                <p class="text-uppercase">Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cards.html">
+                                <i class="fa fa-1_5x fa-credit-card-alt"></i>
+                                <p class="text-uppercase">Cards</p>
+                            </a>
+                        </li>
+                        <li class="pl-2">
+                            <a class="menu-bar" href="#">
+                                <i class="fa fa-1_5x fa-bars"></i>
+                                <p class="text-uppercase">More</p>
+                            </a>
+                        </li>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="footer-bottom text-center">
-                <ul>
-                    <li>
-                        <a href="home.html">
-                            <i class="fa fa-home"></i>
-                            <p>Home</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="all-page.html">
-                            <i class="fa fa-file-text"></i>
-                            <p>Pages</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="component.html">
-                            <i class="fa fa-plus"></i>
-                            <p>Components</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="menu-bar" href="#">
-                            <i class="fa fa-bars"></i>
-                            <p>Menu</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="carts.html">
-                            <i class="fa fa-home"></i>
-                            <p>My Card</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </footer>
 
     <!-- back to top area start -->
     <div class="back-to-top">
@@ -190,4 +201,5 @@
 
 
 <!-- Mirrored from www.s7template.com/tf/bankapp/notification.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Oct 2020 08:25:00 GMT -->
+
 </html>
