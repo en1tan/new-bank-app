@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BankApp - Dashboard</title>
+
+    <!-- Stylesheet File -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- header start -->
+    <div class="header-area py-3" style="background-image: url(assets/img/bg/1.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-3">
+                    <div class="menu-bar">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-4 text-center">
+                    <a href="home.html" class="logo">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-sm-4 col-5 text-right">
+                    <ul class="header-right">
+                        <!-- <li>
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                                <span class="badge">9</span>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a href="notification.html">
+                                <i class="fa fa-bell animated infinite swing"></i>
+                                <span class="badge">6</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-user" href="user-setting.html"><img src="assets/img/user.png"
+                                    alt="img"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- sidebar start -->
+    <div class="ba-navbar">
+        <div class="ba-navbar-user mb-0">
+            <div class="menu-close">
+                <i class="la la-times"></i>
+            </div>
+            <div class="thumb">
+                <img src="assets/img/user.png" alt="user">
+            </div>
+            <div class="details">
+                <h5>Raduronto kelax</h5>
+                <p>ID: 99883323</p>
+            </div>
+        </div>
+        <div class="transaction-details mt-0">
+            <ul class="transaction-details-inner">
+                <li>
+                    <a href="dashboad.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-building"></i>&nbsp;Home
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cards.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-credit-card"></i>&nbsp;My Cards
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-dollar"></i>&nbsp;Transactions
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-setting.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-cog"></i>&nbsp;Settings
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center mt-3">
+                <a class="btn btn-warning" href="signin.html">Logout</a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <!-- fund wallet start -->
+    <div class="add-balance-inner-wrap">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Fund Wallet</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form action="http://www.s7template.com/tf/bankapp/index.html">
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label class="label" for="account1">From</label>
+                                        <select class="form-control custom-select" id="account1">
+                                            <option value="0">Investment (*** 7284)</option>
+                                            <option value="1">Savings (*** 5078)</option>
+                                            <option value="2">Deposit (*** 2349)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group basic">
+                                    <label class="label">Enter Amount</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="input1">$</span>
+                                        </div>
+                                        <input type="number" class="form-control form-control-lg" value="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group basic">
+                                    <button type="button" class="btn-c btn-primary btn-block btn-lg"
+                                        data-dismiss="modal">Fund Wallet</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fund Wallet End -->
+    <!-- Send Airtime Modal -->
+    <div class="send-airtime-inner-wrap">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Send Airtime</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form action="#">
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label class="label" for="account1">From</label>
+                                        <select class="form-control custom-select" id="account1">
+                                            <option value="0">Investment (*** 7284)</option>
+                                            <option value="1">Savings (*** 5078)</option>
+                                            <option value="2">Deposit (*** 2349)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label for="networkType" class="label">Network Type</label>
+                                        <select name="networkType" id="networkType" class="form-control custom-select">
+                                            <option value="mtn">MTN</option>
+                                            <option value="airtel">Airtel</option>
+                                            <option value="glo">Glo</option>
+                                            <option value="etisalat">Etisalat</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-group basic">
+                                    <label class="label">Enter Amount</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="input1">$</span>
+                                        </div>
+                                        <input type="number" class="form-control form-control-lg" value="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group basic">
+                                    <button type="button" class="btn-c btn-primary btn-block btn-lg"
+                                        data-dismiss="modal">Send Airtime</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Send Airtime End -->
+
+    <!-- Send Data Modal -->
+    <div class="send-data-inner-wrap">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Send Data</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form action="#">
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label class="label" for="account1">From</label>
+                                        <select class="form-control custom-select" id="account1">
+                                            <option value="0">Investment (*** 7284)</option>
+                                            <option value="1">Savings (*** 5078)</option>
+                                            <option value="2">Deposit (*** 2349)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label for="networkType" class="label">Network Type</label>
+                                        <select name="networkType" id="networkType" class="form-control custom-select">
+                                            <option id="mtn" value="mtn">MTN</option>
+                                            <option id="airtel" value="airtel">Airtel</option>
+                                            <option id="glo" value="glo">Glo</option>
+                                            <option id="etisalat" value="etisalat">Etisalat</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <div class="input-wrapper">
+                                        <label for="dataType" class="label">Data Type</label>
+                                        <select name="dataType" id="dataType" class="form-control custom-select">
+                                            <option value="1">1 GB</option>
+                                            <option value="2">2 GB</option>
+                                            <option value="3">5 GB</option>
+                                            <option value="4">10 GB</option>
+                                            <option value="5">20 GB</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <button type="button" class="btn-c btn-primary btn-block btn-lg"
+                                        data-dismiss="modal">Send Data</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- balance start -->
+    <div class="container m-auto pd-top-40 w-75">
+        <h2 class="text-center mg-top-50">Welcome John!</h2>
+        <div class="pl-5 container mg-top-5 row text-center">
+            <div class="col">
+                <div class="mg-top-30">
+                    <h3 class="amount" style="color: #0114a7;">$66,985.00</h3>
+                    <span class="title font-sm">Current Balance</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="mg-top-35">
+                    <a class="btn btn-blue ba-add-balance-btn" href="#" role="button">Fund Wallet<i
+                            class="fa fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- balance End -->
+
+    <!-- Account Options start -->
+    <div class="add-balance-area container w-75">
+        <div class="container">
+            <div class="ba-add-balance-inner mg-top-40">
+                <div class="row custom-gutters-20">
+                    <div class="col">
+                        <a class="btn btn-red" href="cards.html" role="button">Cards <i
+                                class="fa fa-credit-card"></i></a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-success ba-send-airtime-btn" href="#">Buy Airtime <i
+                                class="fa fa-cube "></i></a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-warning ba-send-data-btn" href="#">Buy Data<i class="fa fa-ioxhost"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Account Options End -->
+
+
+
+    <div class="container m-auto w-100">
+        <!-- transaction start -->
+        <div class="transaction-area pd-top-36">
+            <div class="container card p-3">
+                <div class="section-title">
+                    <h3 class="title">All Transactions</h3>
+                </div>
+                <ul class="transaction-inner">
+                    <li class="ba-single-transaction style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icon/2.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h5>Namecheap Inc.</h5>
+                            <p>Domain Purchase</p>
+                            <span>About 20 seconds ago</span>
+                            <h5 class="amount text-red">-$130</h5>
+                        </div>
+                    </li>
+                    <li class="ba-single-transaction style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icon/3.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h5>Namecheap Inc.</h5>
+                            <p>Domain Purchase</p>
+                            <span>An hour ago</span>
+                            <h5 class="amount text-green">+$160</h5>
+                        </div>
+                    </li>
+                    <li class="ba-single-transaction style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icon/2.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h5>Namecheap Inc.</h5>
+                            <p>Domain Purchase</p>
+                            <span>5 days ago</span>
+                            <h5 class="amount text-red">-$20</h5>
+                        </div>
+                    </li>
+                    <li class="ba-single-transaction style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icon/3.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h5>Namecheap Inc.</h5>
+                            <p>Domain Purchase</p>
+                            <span>A week ago</span>
+                            <h5 class="amount text-green">+$10</h5>
+                        </div>
+                    </li>
+                    <li class="ba-single-transaction style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icon/2.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h5>Namecheap Inc.</h5>
+                            <p>Domain Purchase</p>
+                            <span>2 weeks ago</span>
+                            <h5 class="amount text-red">-$130</h5>
+                        </div>
+                    </li>
+                    <li class="ba-single-transaction style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icon/3.png" alt="img">
+                        </div>
+                        <div class="details">
+                            <h5>Namecheap Inc.</h5>
+                            <p>Domain Purchase</p>
+                            <span>A month ago</span>
+                            <h5 class="amount text-green">+$160</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- transaction End -->
+    </div>
+
+    <!-- Footer Area -->
+    <footer class="footer-area pd-top-40">
+        <div class="text-center py-2" style="background-image: url(assets/img/bg/7.png);">
+            <div class="container">
+                <div class="footer-bottom text-center">
+                    <ul>
+                        <li>
+                            <a href="dashboad.html">
+                                <i class="fa fa-1_5x fa-home"></i>
+                                <p class="text-uppercase">Home</p>
+                            </a>
+                            <!-- <hr style="border-top: 3px solid rgb(10,"/> -->
+                        </li>
+                        <li>
+                            <a href="transactions.html">
+                                <i class="fa fa-1_5x fa-files-o"></i>
+                                <p class="text-uppercase">Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cards.html">
+                                <i class="fa fa-1_5x fa-credit-card-alt"></i>
+                                <p class="text-uppercase">Cards</p>
+                            </a>
+                        </li>
+                        <li class="pl-2">
+                            <a class="menu-bar" href="#">
+                                <i class="fa fa-1_5x fa-bars"></i>
+                                <p class="text-uppercase">More</p>
+                            </a>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- All Js File here -->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

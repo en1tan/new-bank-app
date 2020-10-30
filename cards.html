@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BankApp - My Cards</title>
+
+    <!-- Stylesheet File -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="bg-gray">
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <div class="body-overlay" id="body-overlay"></div>
+    <!-- sidebar start -->
+    <div class="ba-navbar">
+        <div class="ba-navbar-user mb-0">
+            <div class="menu-close">
+                <i class="la la-times"></i>
+            </div>
+            <div class="thumb">
+                <img src="assets/img/user.png" alt="user">
+            </div>
+            <div class="details">
+                <h5>Raduronto kelax</h5>
+                <p>ID: 99883323</p>
+            </div>
+        </div>
+        <div class="transaction-details mt-0">
+            <ul class="transaction-details-inner">
+                <li>
+                    <a href="dashboad.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-building"></i>&nbsp;Home
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cards.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-credit-card"></i>&nbsp;My Cards
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-dollar"></i>&nbsp;Transactions
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-setting.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-cog"></i>&nbsp;Settings
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center mt-3">
+                <a class="btn btn-warning" href="signin.html">Logout</a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
+    <div class="container pd-top-40 pl-5 mg-bottom-35 ml-auto">
+        <a href="../" class="btn btn-blue" role="button">
+            <i class="fa fa-arrow-left"></i>
+            Back
+        </a>
+    </div>
+
+    <!-- Add Card Modal Start -->
+    <div class="add-card-inner-wrap" style="z-index: 16;">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add Card</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form action="#">
+                                <div class="form-group basic">
+                                    <label class="label">Card Name</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                                        </div>
+                                        <input id="cardName" type="text" class="form-control form-control-lg"
+                                            maxlength="20">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label class="label">Card Number</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-id-card"></i></span>
+                                        </div>
+                                        <input id="cardNumber" type="number" class="form-control form-control-lg"
+                                            maxlength="12">
+
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label class="label">Expiration(mm/dd)</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-calendar-times-o"></i></span>
+                                        </div>
+                                        <div class="row justify-content-around">
+                                            <div class="col">
+                                                <select name="month" id="month" class="custom-select">
+                                                    <option value="">MM</option>
+                                                    <option value="01">01</option>
+                                                    <option value="02">02</option>
+                                                    <option value="03">03</option>
+                                                    <option value="04">04</option>
+                                                    <option value="05">05</option>
+                                                    <option value="06">06</option>
+                                                    <option value="07">07</option>
+                                                    <option value="08">08</option>
+                                                    <option value="09">09</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                            </div>
+                                            <div class="mt-2">/</div>
+                                            <div class="col">
+                                                <select name="year" id="year" class="custom-select">
+                                                    <option value="">YY</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label class="label">Security Code</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                                        </div>
+                                        <input id="securityCode" type="number" class="form-control form-control-lg"
+                                            pattern="[0-9]*" inputmode="numeric" maxlength="3">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <button type="button" class="btn-c btn-primary btn-block btn-lg"
+                                        data-dismiss="modal">Add Card</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add Card Modal End -->
+
+    <!-- cart start -->
+    <div class="container cart-area pd-top-36 row m-auto">
+        <div class="col">
+            <div class="section-title row justify-content-between">
+                <h3 class="title col pl-4">My Cards</h3>
+                <button class="btn btn-danger -col-2 -pr-2 mr-4 ba-add-card-btn" href="#">
+                    <i class="fa fa-plus"></i>
+                </button>
+            </div>
+            <div class="carousel slide" id="cardCarousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#cardCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#cardCarousel" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active p-2">
+                        <div class="ba-cart-inner mb-3" style="background: linear-gradient(#2b2b2b, #3c3e9f);">
+                            <div class="mx-3">
+                                <p>Current Balance</p>
+                                <h4>$56,985.00</h4>
+                                <p>Card Number&nbsp;<span class="fa fa-eye" role="button"></span></p>
+                                <h5>**** **** **** 0909</h5>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Expiry</p>
+                                        <h5>12/10</h5>
+                                    </div>
+                                    <div class="col-8">
+                                        <p>CCV&nbsp;<span class="fa fa-eye" role="button"></span></p>
+                                        <h5>***</h5>
+                                    </div>
+                                </div>
+                                <p>aron smith</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item p-2">
+                        <div class="ba-cart-inner mb-3" style="background: linear-gradient(#2b2b2b, #3c3e9f);">
+                            <p>Current Balance</p>
+                            <h4>$59,985.00</h4>
+                            <p>Card Number</p>
+                            <h5>0000 1000 0000 0909</h5>
+                            <div class="row">
+                                <div class="col-4">
+                                    <p>Expiry</p>
+                                    <h5>12/10</h5>
+                                </div>
+                                <div class="col-8">
+                                    <p>CCV</p>
+                                    <h5>513</h5>
+                                </div>
+                            </div>
+                            <p>aron smith</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#cardCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a href="#cardCarousel" class="carousel-control-next" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="col ml-5 pd-top-40 mg-top-40">
+            <div class="card border-0 bg-transparent">
+                <div class="card-body text-center text-success">
+                    <i class="fa fa-5x fa-plus"></i>
+                    <h4 class="text-success">Add Card</h4>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <!-- cart End -->
+
+    <!-- Card Details Area -->
+
+    <div class="container row m-auto">
+        <div class="col p-2 m-auto container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="title">Card Details</h2>
+                    <ul class="list-group">
+                        <li class="list-inline-item">
+                            <p class="text-uppercase">Card Name</p>
+                            <h6>John Doe</h6>
+                            <hr class="hr-card" />
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-uppercase">Card Number</p>
+                            <h6>0000 0000 0000 0909</h6>
+                            <hr class="hr-card" />
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-uppercase">Card CVV</p>
+                            <h6>513</h6>
+                            <hr class="hr-card" />
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-uppercase">Billing Address</p>
+                            <h6>Lagos State,Nigeria</h6>
+                            <hr class="hr-card" />
+                        </li>
+                        <li class="list-inline-item">
+                            <p class="text-uppercase">Zip Code</p>
+                            <h6>23401</h6>
+                            <hr class="hr-card" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Card Details Area End -->
+        <!-- Card Transactions Area -->
+        <div class="col p-2 m-auto container">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="section-title">Card Transactions</h2>
+                    <div class="transaction-area">
+                        <ul class="transaction-inner">
+                            <li class="ba-single-transaction style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/icon/2.png" alt="img">
+                                </div>
+                                <div class="details">
+                                    <h5>Namecheap Inc.</h5>
+                                    <p>Domain Purchase</p>
+                                    <h5 class="amount text-red">-$130</h5>
+                                </div>
+                            </li>
+                            <li class="ba-single-transaction style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/icon/3.png" alt="img">
+                                </div>
+                                <div class="details">
+                                    <h5>Namecheap Inc.</h5>
+                                    <p>Domain Purchase</p>
+                                    <h5 class="amount text-green">+$160</h5>
+                                </div>
+                            </li>
+                            <li class="ba-single-transaction style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/icon/2.png" alt="img">
+                                </div>
+                                <div class="details">
+                                    <h5>Namecheap Inc.</h5>
+                                    <p>Domain Purchase</p>
+                                    <h5 class="amount text-red">-$20</h5>
+                                </div>
+                            </li>
+                            <li class="ba-single-transaction style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/icon/3.png" alt="img">
+                                </div>
+                                <div class="details">
+                                    <h5>Namecheap Inc.</h5>
+                                    <p>Domain Purchase</p>
+                                    <h5 class="amount text-green">+$10</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Transactions Area End -->
+        </div>
+    </div>
+
+
+
+    <!-- Footer Area -->
+    <footer class="footer-area pd-top-40">
+        <div class="text-center py-2" style="background-image: url(assets/img/bg/7.png);">
+            <div class="container">
+                <div class="footer-bottom text-center">
+                    <ul>
+                        <li>
+                            <a href="dashboad.html">
+                                <i class="fa fa-1_5x fa-home"></i>
+                                <p class="text-uppercase">Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transactions.html">
+                                <i class="fa fa-1_5x fa-files-o"></i>
+                                <p class="text-uppercase">Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cards.html">
+                                <i class="fa fa-1_5x fa-credit-card-alt"></i>
+                                <p class="text-uppercase">Cards</p>
+                            </a>
+                        </li>
+                        <li class="pl-2">
+                            <a class="menu-bar" href="#">
+                                <i class="fa fa-1_5x fa-bars"></i>
+                                <p class="text-uppercase">More</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- All Js File here -->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>BankApp - User Settings</title>
+
+    <!-- Stylesheet File -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body class="container">
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <div class="body-overlay" id="body-overlay"></div>
+
+    <!-- !Modals -->
+    <!-- Change Email Modal -->
+    <div class="ba-change-email-inner-wrap">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Change Email Address</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form action="#">
+                                <div class="form-group basic">
+                                    <label for="username" class="label">Email Address</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="email"><i
+                                                    class="fa fa-envelope"></i></span>
+                                        </div>
+                                        <input type="email" class="form-control form-control-lg"
+                                            value="johndoe@doe.com">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label for="email" class="label">Passoword</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="password"><i
+                                                    class="fa fa-envelope"></i></span>
+                                        </div>
+                                        <input type="password" class="form-control form-control-lg"
+                                            placeholder="********">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <button type="button" class="btn-c btn-primary btn-block btn-lg"
+                                        data-dismiss="modal">Change Email Address</button>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Change Address Modal End -->
+    <div class="ba-change-address-inner-wrap">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Change Contact Address</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">×</span>
+                            <span class="sr-only">close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="action-sheet-content">
+                            <form action="#">
+                                <div class="form-group basic">
+                                    <label for="street" class="label">Street Address 1</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="text"><i
+                                                    class="fa fa-location-arrow"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label for="street" class="label">Street Address 2</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label for="city" class="label">City/State</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="city"><i
+                                                    class="fa fa-building"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label for="country" class="label">Country</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="country"><i
+                                                    class="fa fa-flag"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <label for="zip" class="label">ZIP Code</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="zip"><i class="fa fa-info"></i></span>
+                                        </div>
+                                        <input type="number" class="form-control form-control-lg">
+                                    </div>
+                                </div>
+                                <div class="form-group basic">
+                                    <button type="button" class="btn-c btn-primary btn-block btn-lg"
+                                        data-dismiss="modal">Change Contact Address</button>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Change Address Modal End -->
+
+    <!-- sidebar start -->
+    <div class="ba-navbar">
+        <div class="ba-navbar-user mb-0">
+            <div class="menu-close">
+                <i class="la la-times"></i>
+            </div>
+            <div class="thumb">
+                <img src="assets/img/user.png" alt="user">
+            </div>
+            <div class="details">
+                <h5>Raduronto kelax</h5>
+                <p>ID: 99883323</p>
+            </div>
+        </div>
+        <div class="transaction-details mt-0">
+            <ul class="transaction-details-inner">
+                <li>
+                    <a href="dashboad.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-building"></i>&nbsp;Home
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="cards.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-credit-card"></i>&nbsp;My Cards
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="transactions.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-dollar"></i>&nbsp;Transactions
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-setting.html" class="align-middle">
+                        <i class="fa fa-1_5x fa-cog"></i>&nbsp;Settings
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-center mt-3">
+                <a class="btn btn-warning" href="signin.html">Logout</a>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+    <div class="container pd-top-40">
+        <a href="../" class="btn btn-blue" role="button">
+            <i class="fa fa-arrow-left"></i>
+            Back
+        </a>
+    </div>
+
+    <!-- balance start -->
+    <div class="balance-area pd-top-40">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="title">Settings</h3>
+            </div>
+            <div class="text-left row w-75 align-middle">
+                <div class="col">
+                    <img src="assets/img/other/1.png" alt="img" class="rounded-circle border border-info">
+                </div>
+                <div class="col-auto mt-2">
+                    <h3>John Doe</h3>
+                    <p>Premium Savings</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- balance End -->
+
+    <!-- transaction start -->
+    <div class="transaction-details pd-top-36">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="title">Profile Setting</h3>
+            </div>
+            <ul class="transaction-details-inner">
+                <li>
+                    <span class="float-left">Payment Alert</span>
+                    <span class="float-right">
+                        <span class="single-switch">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </span>
+                    </span>
+                </li>
+                <li class="align-middle">
+                    <span class="float-left pt-2">Notification Sound</span>
+                    <span class="float-right">
+                        <select name="notificationSound" id="notificationSound" class="custom-select">
+                            <option value="0">Silent</option>
+                            <option value="1">Beep</option>
+                            <option value="2">Ring</option>
+                            <option value="3">Flick</option>
+                        </select>
+                    </span>
+                </li>
+                <li class="ba-change-email">
+                    <a href="#">
+                        <span class="float-left">Change Email Address</span>
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+                <li class="ba-change-address">
+                    <a href="#">
+                        <span class="float-left">Edit Address</span>
+                        <span class="float-right"><i class="la la-angle-right"></i></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- transaction End -->
+
+    <!-- Footer Area -->
+    <footer class="footer-area pd-top-40">
+        <div class="text-center py-2" style="background-image: url(assets/img/bg/7.png);">
+            <div class="container">
+                <div class="footer-bottom text-center">
+                    <ul>
+                        <li>
+                            <a href="dashboad.html">
+                                <i class="fa fa-1_5x fa-home"></i>
+                                <p class="text-uppercase">Home</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="transactions.html">
+                                <i class="fa fa-1_5x fa-files-o"></i>
+                                <p class="text-uppercase">Transactions</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="cards.html">
+                                <i class="fa fa-1_5x fa-credit-card-alt"></i>
+                                <p class="text-uppercase">Cards</p>
+                            </a>
+                        </li>
+                        <li class="pl-2">
+                            <a class="menu-bar" href="#">
+                                <i class="fa fa-1_5x fa-bars"></i>
+                                <p class="text-uppercase">More</p>
+                            </a>
+                        </li>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- All Js File here -->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>
