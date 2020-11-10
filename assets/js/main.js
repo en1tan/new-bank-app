@@ -201,19 +201,19 @@
             Datepicker
         ------------------------------------------------*/
 
-    $('#date-from').datepicker({
-        autoclose: true,
-        format: "mm/dd",
-        maxViewMode: 0,
-        startDate: "now"
-    });
+    // $('#date-from').datepicker({
+    //     autoclose: true,
+    //     format: "mm/dd",
+    //     maxViewMode: 0,
+    //     startDate: "now"
+    // });
 
-    $('#date-to').datepicker({
-        autoclose: true,
-        format: "mm/dd",
-        maxViewMode: 0,
-        startDate: "now"
-    });
+    // $('#date-to').datepicker({
+    //     autoclose: true,
+    //     format: "mm/dd",
+    //     maxViewMode: 0,
+    //     startDate: "now"
+    // });
 
     $('.carousel').carousel({
         interval: false
