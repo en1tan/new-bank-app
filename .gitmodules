@@ -1,0 +1,3 @@
+[submodule "bank-app-mock"]
+	path = bank-app-mock
+	url = https://github.com/en1tan/bankapp-mock.git
